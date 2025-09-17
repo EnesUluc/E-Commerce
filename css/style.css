@@ -1,0 +1,23 @@
+
+/* Colors */
+.bg-light{
+    background-color: #F6F1E9 !important;
+}
+.btn-light{
+    background-color: #FF9A00 !important;
+    color: #4F200D;
+}
+
+
+
+
+.top-bar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media(max-width: 530px){
+    .top-bar #items{
+        display: none;
+    }
+}
