@@ -35,6 +35,20 @@ body{
     color: var(--red);
     border-color: var(--orange);
 }
+.btn-light:hover{
+    background-color: var(--red) !important;
+    color: var(--orange);
+    transition-duration: .4s;
+}
+.btn-light-out{
+    background-color: var(--orange) !important;
+    color: var(--red);
+    border-color: var(--orange);
+}
+.btn-light-out:hover{
+    background-color: red !important;
+    color: var(--background)
+}
 .btn-like{
     background-color: var(--background);
     color: var(--orange);
@@ -43,11 +57,6 @@ body{
 .btn-like:hover{
     color: red;
     border: 1px solid red;
-    transition-duration: .4s;
-}
-.btn-light:hover{
-    background-color: var(--red) !important;
-    color: var(--orange);
     transition-duration: .4s;
 }
 
@@ -114,6 +123,45 @@ body{
     object-fit: cover;
 }
 
+/* DETAILS */
+.breadcrumb-item a{
+    text-decoration: none;
+    color: var(--background);
+    opacity: .9;
+}
+.breadcrumb-item a:hover{
+    color: var(--red);
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--background);
+}
+
+/*Details_gallery */
+.gallery-wrap .img-big-wrap{
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.gallery-wrap .thumbs-wrap img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+.gallery-wrap .img-big-wrap img{
+    max-width: 100%;
+}
+.gallery-wrap .thumbs-wrap a{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #dde2e6;
+    border-radius: .4rem;
+    margin: 3px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
 /* Footer */
 footer p{
     color: var(--background);
@@ -142,5 +190,17 @@ footer p{
     }
     .price-wrap{
         font-size: 1rem;
+    }
+}
+
+.checked{
+    color: var(--orange)
+}
+article{
+    display: none;
+}
+.product:hover{
+    article{
+        display: contents;
     }
 }
